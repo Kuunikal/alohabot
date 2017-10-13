@@ -13,7 +13,7 @@ public class Shutdown extends Command {
 
 	@Override
 	protected void execute() throws InternalException {
-		if (auth.getLongID() == 233260729929564170l) bot.shutdown();
+		if (auth.getLongID() == 233260729929564170l) bot.shutdown();	// If the author executing the command is me, shut down the bot
 	}
 
 	@Override

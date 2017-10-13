@@ -14,8 +14,7 @@ public class Hello extends Command {
 
 	@Override
 	protected void execute() throws InternalException {
-		String msg = Util.pick(new String[] {"aloha", "hello", "hey there"});
-		bot.say(msg + ", " + auth + "!", ch);
+		bot.say(Util.pick(new String[] {"aloha", "hello", "hey there"}) + ", " + auth + "!", ch);	// Reply with a random hello message
 	}
 
 	@Override

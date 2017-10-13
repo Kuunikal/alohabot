@@ -24,6 +24,7 @@ public class Main {
 		bot.interpreter.addCommand(Trigger::new, "t", "trigger", "trig");
 		bot.interpreter.addCommand(Shutdown::new, "shutdown", "sd");
 		
+		// D4J event listeners
 		bot.client.getDispatcher().registerListener(new Object() {
 			@EventSubscriber
 			public void onJoin(UserJoinEvent e) {
